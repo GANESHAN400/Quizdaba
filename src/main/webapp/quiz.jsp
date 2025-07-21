@@ -3,127 +3,137 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Web Technologies Quiz</title>
+    <title>Java Acronyms & Abbreviations Quiz</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e0f7fa;
             padding: 20px;
+            margin: 0;
         }
         .quiz-container {
-            background: #fff;
-            padding: 20px;
-            max-width: 800px;
+            background: #ffffff;
+            padding: 30px;
+            max-width: 850px;
             margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            border-radius: 10px;
+            border: 1px solid #b2ebf2;
+        }
+        h2 {
+            text-align: center;
+            color: #006064;
         }
         .question {
             margin-bottom: 25px;
         }
         .question h4 {
             margin-bottom: 10px;
+            color: #00796b;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
         }
         input[type="submit"] {
-            padding: 10px 20px;
-            background: #4CAF50;
-            color: #fff;
-            border: none;
+            padding: 12px 25px;
+            background: #004d40;
+            color: white;
             font-size: 16px;
-            border-radius: 5px;
+            border: none;
+            border-radius:50%;
             cursor: pointer;
         }
         input[type="submit"]:hover {
-            background: #45a049;
+            background: #003c35;
         }
     </style>
 </head>
 <body>
     <div class="quiz-container">
-        <h2>Web Technologies Quiz (HTML, CSS, JS)</h2>
+        <h2>Java Acronyms & Abbreviations Quiz</h2>
         <form action="getMark" method="post">
 
             <div class="question">
-                <h4>1. What does HTML stand for?</h4>
-                <input type="radio" name="q1" value="A" required> A. Hyper Trainer Marking Language<br>
-                <input type="radio" name="q1" value="B"> B. HyperText Markup Language<br>
-                <input type="radio" name="q1" value="C"> C. HyperText Markdown Language<br>
-                <input type="radio" name="q1" value="D"> D. HyperText Machine Language<br>
+                <h4>1. What does JVM stand for?</h4>
+                <input type="radio" name="q1" value="A" required> A. Java Virtual Machine<br>
+                <input type="radio" name="q1" value="B"> B. Java Visual Model<br>
+                <input type="radio" name="q1" value="C"> C. Java Verified Module<br>
+                <input type="radio" name="q1" value="D"> D. Java View Mechanism<br>
             </div>
 
             <div class="question">
-                <h4>2. Which HTML tag is used to define an internal style sheet?</h4>
-                <input type="radio" name="q2" value="A" required> A. &lt;style&gt;<br>
-                <input type="radio" name="q2" value="B"> B. &lt;css&gt;<br>
-                <input type="radio" name="q2" value="C"> C. &lt;script&gt;<br>
-                <input type="radio" name="q2" value="D"> D. &lt;stylesheet&gt;<br>
+                <h4>2. What does JDK stand for?</h4>
+                <input type="radio" name="q2" value="A" required> A. Java Development Kit<br>
+                <input type="radio" name="q2" value="B"> B. Java Debugging Kit<br>
+                <input type="radio" name="q2" value="C"> C. Java Deployment Kernel<br>
+                <input type="radio" name="q2" value="D"> D. Java Data Keeper<br>
             </div>
 
             <div class="question">
-                <h4>3. Which CSS property is used to change the text color of an element?</h4>
-                <input type="radio" name="q3" value="A" required> A. fgcolor<br>
-                <input type="radio" name="q3" value="B"> B. text-color<br>
-                <input type="radio" name="q3" value="C"> C. color<br>
-                <input type="radio" name="q3" value="D"> D. font-color<br>
+                <h4>3. What does JRE stand for?</h4>
+                <input type="radio" name="q3" value="A" required> A. Java Runtime Environment<br>
+                <input type="radio" name="q3" value="B"> B. Java Real Engine<br>
+                <input type="radio" name="q3" value="C"> C. Java Remote Emulator<br>
+                <input type="radio" name="q3" value="D"> D. Java Rendering Engine<br>
             </div>
 
             <div class="question">
-                <h4>4. How do you create a function in JavaScript?</h4>
-                <input type="radio" name="q4" value="A" required> A. function = myFunction()<br>
-                <input type="radio" name="q4" value="B"> B. function:myFunction()<br>
-                <input type="radio" name="q4" value="C"> C. function myFunction() {}<br>
-                <input type="radio" name="q4" value="D"> D. def myFunction():<br>
+                <h4>4. What does OOP stand for?</h4>
+                <input type="radio" name="q4" value="A" required> A. Object Oriented Programming<br>
+                <input type="radio" name="q4" value="B"> B. Object Operated Program<br>
+                <input type="radio" name="q4" value="C"> C. Optional Output Process<br>
+                <input type="radio" name="q4" value="D"> D. Operational Output Protocol<br>
             </div>
 
             <div class="question">
-                <h4>5. Which HTML tag is used to create a hyperlink?</h4>
-                <input type="radio" name="q5" value="A" required> A. &lt;link&gt;<br>
-                <input type="radio" name="q5" value="B"> B. &lt;a&gt;<br>
-                <input type="radio" name="q5" value="C"> C. &lt;href&gt;<br>
-                <input type="radio" name="q5" value="D"> D. &lt;hyperlink&gt;<br>
+                <h4>5. What does JAR stand for in Java?</h4>
+                <input type="radio" name="q5" value="A" required> A. Java Archive<br>
+                <input type="radio" name="q5" value="B"> B. Java Application Runtime<br>
+                <input type="radio" name="q5" value="C"> C. Java Associated Resource<br>
+                <input type="radio" name="q5" value="D"> D. Java Access Runtime<br>
             </div>
 
             <div class="question">
-                <h4>6. How do you write a comment in CSS?</h4>
-                <input type="radio" name="q6" value="A" required> A. // this is a comment<br>
-                <input type="radio" name="q6" value="B"> B. &lt;!-- this is a comment --&gt;<br>
-                <input type="radio" name="q6" value="C"> C. /* this is a comment */<br>
-                <input type="radio" name="q6" value="D"> D. # this is a comment<br>
+                <h4>6. What does IDE stand for?</h4>
+                <input type="radio" name="q6" value="A" required> A. Integrated Development Environment<br>
+                <input type="radio" name="q6" value="B"> B. Integrated Debugging Environment<br>
+                <input type="radio" name="q6" value="C"> C. Internal Development Engine<br>
+                <input type="radio" name="q6" value="D"> D. Interactive Deployment Extension<br>
             </div>
 
             <div class="question">
-                <h4>7. What will the following JavaScript code output? <code>console.log(typeof null);</code></h4>
-                <input type="radio" name="q7" value="A" required> A. "null"<br>
-                <input type="radio" name="q7" value="B"> B. "object"<br>
-                <input type="radio" name="q7" value="C"> C. "undefined"<br>
-                <input type="radio" name="q7" value="D"> D. "number"<br>
+                <h4>7. What does JDBC stand for?</h4>
+                <input type="radio" name="q7" value="A" required> A. Java Database Connectivity<br>
+                <input type="radio" name="q7" value="B"> B. Java Data Binding Class<br>
+                <input type="radio" name="q7" value="C"> C. Java Dynamic Bean Configuration<br>
+                <input type="radio" name="q7" value="D"> D. Java Data Control<br>
             </div>
 
             <div class="question">
-                <h4>8. Which HTML element is used to display a scalar measurement within a known range?</h4>
-                <input type="radio" name="q8" value="A" required> A. &lt;range&gt;<br>
-                <input type="radio" name="q8" value="B"> B. &lt;progress&gt;<br>
-                <input type="radio" name="q8" value="C"> C. &lt;meter&gt;<br>
-                <input type="radio" name="q8" value="D"> D. &lt;gauge&gt;<br>
+                <h4>8. What does JPA stand for?</h4>
+                <input type="radio" name="q8" value="A" required> A. Java Persistence API<br>
+                <input type="radio" name="q8" value="B"> B. Java Page Architecture<br>
+                <input type="radio" name="q8" value="C"> C. Java Project Assembly<br>
+                <input type="radio" name="q8" value="D"> D. Java Property Accessor<br>
             </div>
 
             <div class="question">
-                <h4>9. In JavaScript, which keyword is used to declare a variable?</h4>
-                <input type="radio" name="q9" value="A" required> A. var<br>
-                <input type="radio" name="q9" value="B"> B. int<br>
-                <input type="radio" name="q9" value="C"> C. let<br>
-                <input type="radio" name="q9" value="D"> D. Both A and C<br>
+                <h4>9. What does JVM do?</h4>
+                <input type="radio" name="q9" value="A" required> A. Executes Java bytecode<br>
+                <input type="radio" name="q9" value="B"> B. Compiles Java to machine code directly<br>
+                <input type="radio" name="q9" value="C"> C. Converts HTML to Java<br>
+                <input type="radio" name="q9" value="D"> D. Runs on the server only<br>
             </div>
 
             <div class="question">
-                <h4>10. Which CSS property controls the size of text?</h4>
-                <input type="radio" name="q10" value="A" required> A. font-size<br>
-                <input type="radio" name="q10" value="B"> B. text-size<br>
-                <input type="radio" name="q10" value="C"> C. size<br>
-                <input type="radio" name="q10" value="D"> D. font-style<br>
+                <h4>10. What does GC stand for in Java?</h4>
+                <input type="radio" name="q10" value="A" required> A. Garbage Collection<br>
+                <input type="radio" name="q10" value="B"> B. General Compiler<br>
+                <input type="radio" name="q10" value="C"> C. Generated Code<br>
+                <input type="radio" name="q10" value="D"> D. Global Class<br>
             </div>
 
-            <input type="submit" value="Submit Quiz">
+            <div style="text-align: center; margin-top: 30px; border-radius:50%;">
+                <input type="submit" value="Submit Quiz">
+            </div>
         </form>
     </div>
 </body>
