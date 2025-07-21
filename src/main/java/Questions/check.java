@@ -19,6 +19,7 @@ for(int j=1;j<=10;j++)
 {
 	list.add(r.getParameter("q"+j));
 }
+
 List<String> ans = Arrays.asList(
 	    "A",
 	    "A",

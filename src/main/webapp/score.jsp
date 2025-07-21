@@ -11,7 +11,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #00c6ff, #0072ff);
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* light purple-pink gradient */
             color: #fff;
             height: 100vh;
             display: flex;
@@ -21,25 +21,25 @@
 
         .score-box {
             background-color: #ffffff;
-            color: #333;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            border-top: 5px solid #0072ff;
-            border-bottom: 5px solid #00c6ff;
-            width: 300px;
+            color: #444;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border-left: 8px solid #6a89cc; /* indigo */
+            border-right: 8px solid #38ada9; /* teal */
+            max-width: 320px;
         }
 
         .score-box h2 {
-            margin-bottom: 20px;
-            font-size: 28px;
-            color: #0072ff;
+            margin-bottom: 25px;
+            font-size: 26px;
+            color: #6a89cc;
         }
 
         .score-box p {
-            font-size: 24px;
-            font-weight: 600;
-            color: #00b894;
+            font-size: 26px;
+            font-weight: 700;
+            color: #38ada9;
         }
     </style>
 </head>

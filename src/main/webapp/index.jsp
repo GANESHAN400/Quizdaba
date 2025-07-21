@@ -8,8 +8,8 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e6f0ff; /* light blue */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, blueviolet, #1e3a8a);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,44 +21,47 @@
             background-color: #ffffff;
             padding: 30px 25px;
             width: 100%;
-            max-width: 350px;
-            border: 1px solid #ccc;
+            max-width: 360px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .login-box h2 {
             text-align: center;
             margin-bottom: 25px;
-            color: #003366; /* dark blue */
+            color: #1e3a8a; 
         }
 
         label {
             display: block;
             margin-top: 10px;
             margin-bottom: 5px;
-            font-weight: bold;
-            color: #003366;
+            font-weight: 600;
+            color: #1e40af;
         }
 
         input[type="text"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #999;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
             font-size: 14px;
         }
 
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #004080; /* deep blue */
+            background-color: #2563eb;
             color: white;
             font-size: 16px;
             border: none;
+            border-radius: 6px;
             cursor: pointer;
         }
 
         input[type="submit"]:hover {
-            background-color: #003366;
+            background-color: #1d4ed8; 
         }
 
         .register-link {
@@ -67,8 +70,9 @@
         }
 
         .register-link a {
-            color: #004080;
+            color: #2563eb;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .register-link a:hover {
