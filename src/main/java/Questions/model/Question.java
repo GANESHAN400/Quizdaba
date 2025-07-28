@@ -1,46 +1,43 @@
 package Questions.model;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Question {
 
-	protected void doPost(HttpServletRequest r,HttpServletResponse r1) throws IOException
-	{
-		
-		
-		PrintWriter out=r1.getWriter();
-		String User_otp=r.getParameter("otp");
-		 String url = "jdbc:mysql://localhost:3306/Question";
-         String name = "root";
-         String password = "3105";
-         try {
-        	 
-        	 
-        	 Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection(url, name, password);
-			String insert="insert into dailybill() values(?,?,?)";
-			 PreparedStatement ps = con.prepareStatement(insert);
-			
-		     
-		
-		    
-		
-		} catch (SQLException | ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			 out.println("<div style='color: red;'>Database error.</div>");
-	       
-		}
-	}
-	
-	
+    public List<Model> post() {
+        String url = "jdbc:mysql://localhost:3306/question";
+        String name = "root";
+        String password = "3105";
+        List<Model>m=new ArrayList<>();
+System.out.println(":dhdhdhd");
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url, name, password);
+            String insert = "select * from quiz";
+            Statement st = con.createStatement();  // Corrected
+            ResultSet rs = st.executeQuery(insert);
+
+            // Question 1
+            System.out.println(rs);
+        
+           while(rs.next())
+           {
+        	   Model t=new Model(rs.getInt("num"),rs.getString("q"),rs.getString("a"),rs.getString("b"),rs.getString("c"),rs.getString("d"),rs.getString("ans"));
+        	   m.add(t);
+        	   
+           }
+
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        
+        System.out.print(m);
+        return m;
+    }
 }
