@@ -24,7 +24,7 @@ public class index extends HttpServlet {
 	String t=	r.getParameter("username");
 	
 	String pa=r.getParameter("password");
-			if(t.equals("dinesh") && pa.equals("3105"))
+			if(t.equals("ganesh") && pa.equals("password"))
 			
 			{
 				List<Model> list = new Question().post();

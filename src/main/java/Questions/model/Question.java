@@ -13,9 +13,9 @@ public class Question {
     public List<Model> post() {
         String url = "jdbc:mysql://localhost:3306/question";
         String name = "root";
-        String password = "3105";
+        String password = "root";
         List<Model>m=new ArrayList<>();
-System.out.println(":dhdhdhd");
+//System.out.println(":dhdhdhd");
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(url, name, password);
